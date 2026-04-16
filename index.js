@@ -35,10 +35,14 @@ app.post("/blogs",(req,res)=>{
 });
 app.get("/blogs/search",(req,res)=>{
     let search = req.query.q;
-    const query=search.toLowerCase();
-    const blog= Blogs.find(b => writer === b.query);
-    console.log(blog);
-    
+    if (!search) return res.redirect("/");
+    const query = search.toLowerCase();
+    const searchedBlogs = Blogs.filter(b =>
+        b.writer.toLowerCase().includes(query)
+    );
+   
+    res.render("searchResult.ejs", { searchedBlogs, search });
+        
 
 });
 app.get("/blogs/:id",(req,res)=>{

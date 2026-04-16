@@ -9,6 +9,22 @@
 <body>
     <div class="navbar">
         <h1 class="title">The Rabbit Hole</h1>
+        <h3>Results for "<%= search %>"</h3>
+    </div>
+    <% if (searchedBlogs.length === 0) { %>
+            <p>No results found</p>
+    <% } %>
+    <div class="recentPosts">
+        <% for( blog of searchedBlogs) { %>
+            <div class="postCard">
+                <h3 class="postTitle"><%= blog.topic%></h3>
+                <h4>Author Name:<%= blog.writer %></h4>
+                <p>
+                    <%=blog.content.substring(0,1000)%>
+                </p>
+                <a href="http://localhost:8080/blogs/<%=blog.id %> " class="see-more">See more</a>
+            </div>
+        <% } %>
     </div>
 </body>
 </html>
