@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="title">The Rabbit Hole</h1>
+        <form class="form" method="get" action="/blogs/search">
+            <input placeholder="Seach Blogs or Writers" name="q" class="search" required />
+            <button class="sbutton">Seach</button>
+        </form>
+        <a href="http://localhost:8080/blogs/new" class="createBtn">+ Create Blogs </a>
+    </div>
+    <section class="hero">
+        <h1>Explore ideas</h1>
+        <p class="hero-para">Search blogs or create something new</p>
+    </section>
+    <div class="recentPosts">
+        <% for( blog of recentBlogs) { %>
+            <div class="postCard">
+                <h3 class="postTitle"><%= blog.topic%></h3>
+                <h4>Author Name:<%= blog.writer %></h4>
+                <p>
+                    <%=blog.content.substring(0,1000)%>
+                </p>
+                <a href="http://localhost:8080/blogs/<%=blog.id %> " class="see-more">See more</a>
+            </div>
+        <% } %>
+    </div>
+   
+</body>
+</html>

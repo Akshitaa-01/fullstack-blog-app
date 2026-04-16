@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css" />
+    <title>Write Blog</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="title">The Rabbit Hole</h1>
+        <h3 class="writeTitle">Write Your Own Blog</h3>
+    
+    </div>
+    <form method="post" action="/blogs" class="postForm">
+        <label for="writer">Author Name:</label>
+        <input name="writer" class="inputBox"/>
+        <br><br>
+        <label for="topic">Blog Title:</label>
+        <input name="topic" class="inputBox"/>
+        <br><br>
+        <label for="content">Blog Content:</label>
+        <br>
+        <textarea class="content" name="content" rows="26" cols="140">&nbsp;&nbsp;&nbsp;</textarea>
+        
+        <button class="PostBtn ">Post</button>
+    </form>
+</body>
+</html>

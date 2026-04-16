@@ -1,0 +1,146 @@
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  background: linear-gradient(180deg, #c0b8b8, #f0fdfa);
+  color: #0f172a;
+  height: auto;
+}
+.navbar {
+  margin: 16px 30px;
+  padding: 14px 30px;
+  border-radius: 14px;
+  background: rgb(228, 223, 223);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 20px rgba(226, 2, 2, 0.05);
+}
+
+
+.title {
+  margin: 0;
+  font-weight: 800;
+  color:rgb(90, 1, 1);
+}
+
+
+.form {
+  display: flex;
+  align-items: center;
+  background: #edd6d7;
+  border-radius: 999px;
+  padding: 6px;
+  width: 340px;
+  border: 1px solid rgb(90, 1, 1);
+}
+
+.search {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 14px;
+  background: transparent;
+  font-size: 14px;
+}
+
+.sbutton {
+  border: none;
+  background:rgb(90, 1, 1);
+  color: white;
+  border-radius: 999px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.createBtn {
+  background: rgb(90, 1, 1);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(228, 57, 108, 0.25);
+  transition: 0.2s;
+}
+.createBtn:hover {
+  background: rgb(33, 18, 18);
+}
+.hero {
+  text-align: center;
+  padding: 30px 20px 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 20px;
+
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.hero-para {
+  font-size: 15px;
+  color: #64748b;
+}
+.recentPosts{
+  display: flexbox;
+}
+.postCard {
+  background: #ca8b90;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  height:260px;
+  width:500px;
+
+}
+.content{
+  border: 2px solid rgb(90, 1, 1);
+  border-radius: 20px;
+  margin-left: 15px;
+  margin-top: 14px;
+}
+.postForm{
+  font-weight: 500;
+  color: #0f172a;
+  margin-left: 45px;
+}
+.inputBox{
+  border: 2px solid rgb(90, 1, 1);
+  border-radius: 33px;
+  height: 25px;
+  width: 250px;
+  padding: 5px;
+}
+.writeTitle{
+  font-size:40px;
+  color: #3b1515;
+  margin: 10px;
+}
+.PostBtn{
+  background: rgb(90, 1, 1);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(228, 57, 108, 0.25);
+  transition: 0.2s;
+}
+.see-more {
+  text-decoration: none;
+  background: #440a0a;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.see-more:hover {
+  background: rgb(33, 18, 18);
+}
