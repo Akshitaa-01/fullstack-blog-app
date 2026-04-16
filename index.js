@@ -33,18 +33,21 @@ app.post("/blogs",(req,res)=>{
     Blogs.push({writer,topic,content,id});
     res.redirect("/blogs");
 });
+
 app.get("/blogs/search",(req,res)=>{
     let search = req.query.q;
     if (!search) return res.redirect("/");
     const query = search.toLowerCase();
+
     const searchedBlogs = Blogs.filter(b =>
-        b.writer.toLowerCase().includes(query)
+        b.writer.toLowerCase().includes(query) ||
+        b.topic.toLowerCase().includes(query) ||
+        b.content.toLowerCase().includes(query)
     );
    
     res.render("searchResult.ejs", { searchedBlogs, search });
-        
-
 });
+
 app.get("/blogs/:id",(req,res)=>{
     let {id}=req.params;
     let blog=Blogs.find((b)=>id===b.id);
