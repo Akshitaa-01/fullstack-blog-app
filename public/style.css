@@ -2,15 +2,16 @@
 body {
   margin: 0;
   font-family: system-ui;
-  background: linear-gradient(180deg, #c0b8b8, #f0fdfa);
+  background: linear-gradient(180deg, #dbafaf, rgb(90, 1, 1));
   color: #0f172a;
-  height: auto;
+  height:100vh;
+  
 }
 .navbar {
   margin: 16px 30px;
   padding: 14px 30px;
   border-radius: 14px;
-  background: rgb(228, 223, 223);
+  background: rgb(249, 234, 234);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,9 +91,9 @@ body {
   display: flexbox;
 }
 .postCard {
-  background: #ca8b90;
+  background: rgb(249, 234, 234);
   padding: 15px;
-  margin: 10px 0;
+  margin-left: 32px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   height:260px;
@@ -132,7 +133,7 @@ body {
   box-shadow: 0 4px 12px rgba(228, 57, 108, 0.25);
   transition: 0.2s;
 }
-.see-more {
+.blogcardButton {
   text-decoration: none;
   background: #440a0a;
   color: white;
@@ -141,6 +142,6 @@ body {
   text-align: center;
 }
 
-.see-more:hover {
+.blogcardButton:hover {
   background: rgb(33, 18, 18);
 }
